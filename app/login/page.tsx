@@ -20,7 +20,7 @@ export default function LoginPage() {
     e.preventDefault();
     setError(null); setLoading(true);
     try {
-      const data = await gqlRequest<LoginResponse>(LOGIN_MUTATION, { identifier, password });
+      const data = await gqlRequest<LoginResponse>(LOGIN_MUTATION, {  });
       const jwt = data?.login;
       if (!jwt) throw new Error('JWT manquant dans la réponse');
       setToken(jwt);

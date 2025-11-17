@@ -1,7 +1,7 @@
 // lib/mutations.ts
 export const LOGIN_MUTATION = /* GraphQL */ `
-  mutation Login($input: LoginInput!) {
-    login(input: $input) {
+  mutation Login {
+    login(identifier: "swanronco@gmail.com", password: "password1234") {
       token
       user {
         id

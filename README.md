@@ -42,11 +42,7 @@ mutation SignUp($firstName: String!, $lastName: String!, $email: String!, $usern
 # 1) Installer les dépendances
 npm install
 
-# 2) (optionnel) Créer un fichier .env.local
-cp .env.local.example .env.local
-# Éditer les variables si besoin
-
-# 3) Lancer en développement
+# 2) Lancer en développement
 npm run dev
 # -> http://localhost:3000
 ```
